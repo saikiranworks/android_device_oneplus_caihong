@@ -10,6 +10,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 # Inherit from caihong device
 $(call inherit-product, device/oneplus/caihong/device.mk)
 
+# Personal builds must not follow the official maintainer's OTA channel.
+CRDROID_PERSONAL_BUILD := true
+CRDROID_PERSONAL_MAINTAINER := Saikiran
+
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
 

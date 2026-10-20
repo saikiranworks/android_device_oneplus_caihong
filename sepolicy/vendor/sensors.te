@@ -1,0 +1,4 @@
+# The Oplus sensor HAL and the Qualcomm sensors daemon read vendor
+# properties that the shared policy only grants to other domains.
+get_prop(hal_oplus_sensor_aidl, vendor_sensors_prop)
+get_prop(vendor_sensors, vendor_qc_aon_prop)
